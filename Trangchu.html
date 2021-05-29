@@ -24,13 +24,19 @@
             background-size: cover;
             font-weight: bold;
         }
+
+        .card-4 {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            margin: 10px auto;
+        }
+        
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">TiKiu - Vietnam</a>
+            <a style=" font-weight: bold;" class="navbar-brand" href="#">TiKiu - Vietnam</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -112,23 +118,62 @@
     </header>
 
     <!-- Page Content -->
-    <section class="py-5">
-        <div class="container">
-            <h1 class="display-4">TiKiu - Vietnam</h1>
-            <p class="lead">
-                Tikiu - Vietnam mang đến trải nghiệm mua sắm tích hợp với vô số sản phẩm đa dạng chủng loại, cộng đồng
-                người dùng năng động và chuỗi dịch vụ liền mạch. Dịch vụ giao hàng nhanh chóng với các hình thức thanh toán khác nhau. Luôn sẵn sàng hỗ trợ khách hàng 24/24.
-            </p>
-            <p>
-                -Techcombank: 19033063079010 CTK: TRAN BAO QUOC
-            </p>
-            <p>
-                - MB Bank: 0100128051999 CTK: TRAN BAO QUOC
-            </p>
-            <p>Hotline: 0923.10.90.99</p>
+    <div class="row" style="background-color: #b2bec3;">
+        <div class="col-md-6">
+            <section class="py-5">
+                <div class="container">
+                    <h1 class="display-4">Tai nghe Airpods 2 (1:1)</h1>
+                    <ul>
+                        <li>Lỗi 1 đổi 1 trong vòng 1 tháng.</li>
+                        <li>Bảo hành lên đến 6 tháng.</li>
+                        <li>Cam kết âm thanh chất lượng.</li>
+                        <li>Cảm biến đa điểm.</li>
+                        <li>Check setting thoải mãi.</li>
+                        <li>100% hàng nguyên seal và y hình.</li>
+                        <li>Hiển thị POP - UP khi kết nối.</li>
+                        <li>Pin lên đến 5 tiếng.</li>
+                    </ul>
 
+                </div>
+            </section>
         </div>
-    </section>
+        <div class="col-md-6">
+            <section class="py-5">
+                <div style="text-align: center;" class="container">
+                    <img class="card card-4" src="shoppee.PNG" alt="">
+                    <h4>Quét mã QR để mua tại Shopee</h4>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <section class="py-5">
+                <div class="container">
+                    <h1 class="display-4">TiKiu - Vietnam</h1>
+                    <p class="lead">
+                        Tikiu - Vietnam mang đến trải nghiệm mua sắm tích hợp với vô số sản phẩm đa dạng chủng loại,
+                        cộng đồng
+                        người dùng năng động và chuỗi dịch vụ liền mạch. Dịch vụ giao hàng nhanh chóng với các hình thức
+                        thanh toán khác nhau. Luôn sẵn sàng hỗ trợ khách hàng 24/24.
+                    </p>
+                    <p>
+                        -Techcombank: 19033063079010 CTK: TRAN BAO QUOC
+                    </p>
+                    <p>
+                        - MB Bank: 0100128051999 CTK: TRAN BAO QUOC
+                    </p>
+                    <p>Hotline: 0923.10.90.99</p>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
     <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
 
@@ -137,23 +182,23 @@
     </div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101248128834288");
-      chatbox.setAttribute("attribution", "biz_inbox");
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v10.0'
-        });
-      };
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "101248128834288");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 </body>
 
